@@ -1,0 +1,263 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@0,600;1,700&display=swap');
+
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body{
+	font-family: 'Nunito Sans';
+}
+
+nav{
+	display: flex;
+	justify-content: space-between;
+	padding: 10px 50px;
+	background-color: white;
+	margin: 5px;
+	border-radius: 5px;
+	box-shadow:20px 20px 50px 15px lightgrey;
+}
+
+nav ul{
+	display: flex;
+	list-style: none;
+	width: 250px;
+	justify-content: space-between;
+	align-items: center;
+}
+
+nav ul a{
+	text-decoration: none;
+	color: black;
+}
+
+nav ul a:hover{
+	color: blue;
+}
+
+.button{
+	display: flex;
+	justify-content: center;
+	height: 40px;
+	background: #6C63FF;
+	border-radius: 4px;
+	font-size: 18px;
+	line-height: 25px;
+	text-align: center;
+	color: white;
+	padding: 0.1em;
+}
+
+.button:hover{
+	background: darkblue;
+	cursor: pointer;
+	padding: 0.2em;
+}
+
+.fa-plus-circle{
+	margin-right: 0.9em;
+	margin-top: 0.5em;
+}
+
+.body-div1, .body-div2{
+	margin-left: 150px;
+	margin-right: 150px;
+}
+
+.body-div1{
+	margin-top: 50px;
+	font-size: 24px;
+	line-height: 33px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin-bottom: 60px;
+}
+
+.article-card{
+	width: 330px;
+	margin: 30px;
+}
+
+.article-card h1 {
+	margin-top: 20px;
+	font-weight: 600;
+	font-size: 20px;
+	line-height: 27px;
+}
+
+.article-card p {
+	margin: 15px 0;
+	font-weight: 300;
+	font-size: 16px;
+	line-height: 22px;
+}
+
+.body-div2 {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+
+.card-buttons{
+	display: flex;
+	align-items: center;
+}
+
+.card-buttons a, .card-buttons span{
+	text-decoration: none;
+	padding-right: 3px;
+	font-weight: 600;
+	font-size: 14px;
+	line-height: 19px;
+	color: #6C63FF;
+}
+
+#popup{
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	display: flex;
+	position: absolute;
+}
+
+img#close{
+	position: absolute;
+	right: -920px;
+	margin: 13px 0px 0px 19px;
+	cursor: pointer;
+	z-index: 9;
+}
+
+img#rect{
+	position: absolute;
+	width: 5px;
+	height: 41px;
+	background: #FE9A28;
+	z-index: 9;
+	margin: 41px 0px 0px 18px;
+}
+
+div#popupContact{
+	display: flex;
+	flex-direction: column;
+	height: 41px;
+	background: #FE9A28;
+	z-index: 9;
+	margin: 41px 0px 0px 18px;
+}
+
+div#popupContact{
+	display: flex;
+	flex-direction: column;
+	position: absolute;
+	top: 25%;
+	left: 50%;
+	margin-left: -400px;
+}
+
+form{
+	position: absolute;
+	display: flex;
+	justify-content: flex-start;
+	width: 920px;
+	height: 572px;
+	flex-direction: column;
+	border: 2px solid gray;
+	font-family: raleway;
+	background-color: #fff;
+	padding: 10px;
+	margin: 10px;
+	border-radius: 5px;
+}
+
+#title{
+	margin: 10px 0px;
+	padding: 12px 0px 12px 5px;
+	font-family: nunito;
+	font-style: italic;
+	font-weight: bold;
+	font-size: 20px;
+}
+
+h2{
+	position: absolute;
+	display: flex;
+	width: 102px;
+	height: 33px;
+	margin: 41px 0px 0px 42px;
+	font-family: nunito;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 24px;
+	line-height: 33px;
+	z-index: 9;
+	display: flex;
+	align-items: center;
+	color: #000000;
+}
+
+input [type="text"]{
+	padding: 0px 0px 0px 21px;
+	width: 884px;
+	height: 49px;
+	color: #828282;
+	font-size: 18px;
+	line-height: 25px;
+	font-family: Nunito;
+	font-style: normal;
+	font-weight: normal;
+}
+
+textarea{
+	margin: 14px 0px 0px 0px;
+	padding: 12px 0px 0px 20px;
+	width: 884px;
+	height: 232px;
+	font-family: Nunito;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 18px;
+	line-height: 25px;
+	display: flex;
+	color: #828282;
+}
+
+::placeholder{
+	font-family: Nunito;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 18px;
+	line-height: 25px;
+	color: #828282;
+}
+
+#post{
+	font-family: Nunito;
+	font-style: normal;
+	font-weight: 600;
+	font-size: 18px;
+	line-height: 25px;
+	color: #FFFFFF;
+	border-radius: 4px;
+	background: #6C63FF;
+	text-align: center;
+	align-items: center;
+	margin: 71px 64px 103px 784px;
+	width: 100px;
+	height: 39px;
+}
+
+#subject{
+	margin: 71px 64px 103px 784px;
+	width: 100px;
+	height: 39px;
+	font-family: Nunito;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 18px;
+	line-height: 25px;
+}
